@@ -20,3 +20,35 @@ body {
     border-top: 1px solid lightgray;
     padding-left: 15px;
 }
+
+/* main */
+
+.container {
+    width: 85%;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-color: lightgreen; /* colore temporaneo */
+}
+
+.buttons {
+    border-bottom: 1px solid lightgray;
+}
+
+.btn {
+    padding: 8px;
+    border-radius: 7px;
+}
+
+.task-btn {
+    border: 1px solid #47ADF1;
+    margin: 10px 0 10px 25px;
+    background-color: #47ADF1;
+    color: white;
+    padding: 8px;
+}
+
+.section-btn {
+    border: 1px solid gray;
+    background: none;
+    color: gray;
+}
