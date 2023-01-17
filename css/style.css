@@ -74,6 +74,7 @@ li {
 
 h2.task-section-title::before {
     content: "\25be";
+    padding-right: 3px;
 }
 
 .taks-section-content {
