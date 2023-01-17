@@ -4,6 +4,11 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 /* Header */
 
 #logo {
@@ -30,6 +35,7 @@ body {
     background-color: lightgreen; /* colore temporaneo */
 }
 
+/* Sezione buttons */
 .buttons {
     border-bottom: 1px solid lightgray;
 }
@@ -48,7 +54,45 @@ body {
 }
 
 .section-btn {
-    border: 1px solid gray;
+    border: 1px solid #c8ced3;
     background: none;
-    color: gray;
+    color: #c8ced3;
+}
+
+/* Sezione tasks */
+
+.task-section-title {
+    margin-bottom: 0;
+}
+
+h2.task-section-title::before {
+    content: "\25be";
+}
+
+.taks-section-content {
+    margin: 10px 0 10px 25px;
+}
+
+.task::before {
+    display: inline-block; /* senza questa proprietà non riesco a cambiare le dimensioni */
+    content: "\2713";
+    color: green;
+    border: 1px solid green;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.task::after {
+    display: inline-block;
+    border-radius: 20%/45%;
+    content: "Editorial";
+    background-color: #45abea;
+    margin-left: 5px;
+    padding: 3px 10px;
+    color: white;
+    font-size: 13px;
 }
