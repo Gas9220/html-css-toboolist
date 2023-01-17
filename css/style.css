@@ -34,10 +34,11 @@ li {
 /* main */
 
 .container {
-    width: 85%;
+    width: 60%;
     margin: 50px auto;
     border-radius: 10px;
-    background-color: lightgreen; /* colore temporaneo */
+    background-color: white;
+    padding: 10px;
 }
 
 /* Sezione buttons */
@@ -127,4 +128,14 @@ h2.task-section-title::before {
 .mobile::after {
     content: "Mobile";
     background-color: #f29e33;
+}
+
+.website::after {
+    content: "Website";
+    background-color: #d863a1;
+}
+
+.sales::after {
+    content: "Sales";
+    background-color: #b0c926;
 }
