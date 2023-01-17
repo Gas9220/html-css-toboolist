@@ -1,0 +1,22 @@
+
+body {
+    background-color: #f6f8f9;
+    margin: 0;
+}
+
+/* Header */
+
+#logo {
+    vertical-align: middle;
+}
+
+#logo-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-content {
+    background-color: white;
+    border-top: 1px solid lightgray;
+    padding-left: 15px;
+}
