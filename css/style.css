@@ -9,6 +9,11 @@ ul {
     padding: 0;
 }
 
+li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 /* Header */
 
 #logo {
@@ -30,7 +35,7 @@ ul {
 
 .container {
     width: 85%;
-    margin: 100px auto;
+    margin: 50px auto;
     border-radius: 10px;
     background-color: lightgreen; /* colore temporaneo */
 }
@@ -75,9 +80,6 @@ h2.task-section-title::before {
 
 .task::before {
     display: inline-block; /* senza questa proprietà non riesco a cambiare le dimensioni */
-    content: "\2713";
-    color: green;
-    border: 1px solid green;
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -86,13 +88,43 @@ h2.task-section-title::before {
     text-align: center;
 }
 
+.checked::before {
+    content: "\2713";
+    color: green;
+    border: 1px solid green;
+}
+
+.unchecked::before {
+    content: "\2715";
+    color: red;
+    border: 1px solid red;
+}
+
 .task::after {
     display: inline-block;
     border-radius: 20%/45%;
-    content: "Editorial";
-    background-color: #45abea;
     margin-left: 5px;
     padding: 3px 10px;
     color: white;
     font-size: 13px;
+}
+
+.editorial::after {
+    content: "Editorial";
+    background-color: #45abea;
+}
+
+.goals::after {
+    content: "Q1 Goals";
+    background-color: #9c72e4;
+}
+
+.recluiting::after {
+    content: "Recluiting";
+    background-color: #65c1aa;
+}
+
+.mobile::after {
+    content: "Mobile";
+    background-color: #f29e33;
 }
